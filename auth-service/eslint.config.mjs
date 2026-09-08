@@ -4,7 +4,7 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: ["node_modules/", "dist/", "**/pnpm-lock.yaml"],
+    ignores: ["node_modules/", "dist/", "**/pnpm-lock.yaml", "**/*.spec.ts", "**/*.d.ts"],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
@@ -20,10 +20,10 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_"
-        }
-      ]
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+        },
+      ],
     },
   }
 );
