@@ -7,7 +7,8 @@
     "dev": "tsx watch src/server.ts",
     "lint": "eslint .",
     "format:write": "pnpm exec prettier . --write",
-    "format:check": "pnpm exec prettier . --check"
+    "format:check": "pnpm exec prettier . --check",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Niaz Ahmed <niazahmed.an@gmail.com>",
@@ -33,6 +34,7 @@
     "@types/node": "^26.4.1",
     "eslint": "^10.10.0",
     "globals": "^17.12.0",
+    "husky": "^9.1.7",
     "prettier": "3.9.6",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2",
