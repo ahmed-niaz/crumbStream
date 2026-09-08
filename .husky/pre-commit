@@ -1,1 +1,1 @@
-cd auth-service && pnpm format:check
+cd auth-service && pnpm exec lint-staged
