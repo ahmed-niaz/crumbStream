@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "format:write": "pnpm exec prettier . --write",
     "format:check": "pnpm exec prettier . --check",
-    "prepare": "husky"
+    "prepare": "cd .. && husky .husky"
   },
   "keywords": [],
   "author": "Niaz Ahmed <niazahmed.an@gmail.com>",
