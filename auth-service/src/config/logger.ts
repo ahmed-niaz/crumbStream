@@ -15,7 +15,7 @@ const logger = winston.createLogger({
         winston.format.json(),
         winston.format.prettyPrint({ colorize: true })
       ),
-      silent: Config.NODE_ENV === "test",
+      silent: Config.NODE_ENV === "development",
     }),
     new winston.transports.File({
       level: "error",
@@ -26,7 +26,7 @@ const logger = winston.createLogger({
         winston.format.json(),
         winston.format.prettyPrint({ colorize: true })
       ),
-      silent: Config.NODE_ENV === "test",
+      silent: Config.NODE_ENV === "development",
     }),
     new winston.transports.Console({
       level: "info",

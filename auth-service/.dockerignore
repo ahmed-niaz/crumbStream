@@ -1,0 +1,35 @@
+# Dependencies & builds
+node_modules
+dist
+build
+coverage
+.nyc_output
+
+# Environment & local configurations
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Git & IDEs
+.git
+.gitignore
+.husky
+.vscode
+.idea
+
+# Docker & CI
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
